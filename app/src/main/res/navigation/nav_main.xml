@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/feedFragment">
+
+    <fragment
+        android:id="@+id/feedFragment"
+        android:name="ru.social.nework.ui.feed.FeedFragment"
+        android:label="@string/app_name">
+
+        <action
+            android:id="@+id/action_feedFragment_to_newPostFragment"
+            app:destination="@id/newPostFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/newPostFragment"
+        android:name="ru.social.nework.ui.feed.NewPostFragment"
+        android:label="@string/title_new_post" />
+
+    <fragment
+        android:id="@+id/eventsFragment"
+        android:name="ru.social.nework.ui.events.EventsFragment"
+        android:label="@string/nav_events" />
+
+    <fragment
+        android:id="@+id/usersFragment"
+        android:name="ru.social.nework.ui.users.UsersFragment"
+        android:label="@string/nav_users" />
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="ru.social.nework.ui.auth.LoginFragment"
+        android:label="@string/action_login" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="ru.social.nework.ui.profile.ProfileFragment"
+        android:label="@string/menu_profile" />
+
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="ru.social.nework.ui.auth.RegisterFragment"
+        android:label="@string/action_register">
+
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+</navigation>

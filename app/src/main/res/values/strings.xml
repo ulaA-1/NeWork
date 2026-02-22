@@ -1,3 +1,80 @@
 <resources>
     <string name="app_name">NeWork</string>
+
+    <string name="menu_profile">Профиль</string>
+    <string name="nav_posts">Посты</string>
+    <string name="nav_events">События</string>
+    <string name="nav_users">Пользователи</string>
+    <string name="menu_post">Меню поста</string>
+
+    <string name="auth_required_title">Нужна авторизация</string>
+    <string name="auth_required_message_post">Чтобы создать пост, войдите или зарегистрируйтесь.</string>
+    <string name="auth_required_message_event">Чтобы создать событие, войдите или зарегистрируйтесь.</string>
+
+    <string name="action_login">Вход</string>
+    <string name="action_register">Регистрация</string>
+    <string name="action_cancel">Отмена</string>
+
+    <string name="hint_login">Логин</string>
+    <string name="hint_password">Пароль</string>
+    <string name="hint_name">Имя</string>
+    <string name="hint_repeat_password">Повтор пароля</string>
+
+    <string name="btn_login">Войти</string>
+    <string name="btn_register">Зарегистрироваться</string>
+    <string name="login_to_register">Нет аккаунта? Регистрация</string>
+
+    <string name="login_success">Вход выполнен успешно</string>
+    <string name="register_success">Регистрация выполнена успешно</string>
+
+    <string name="error_login_empty">Логин не может быть пустым</string>
+    <string name="error_password_empty">Пароль не может быть пустым</string>
+    <string name="error_name_empty">Имя не может быть пустым</string>
+    <string name="error_passwords_not_match">Пароли не совпадают</string>
+    <string name="error_invalid_credentials">Неверный логин или пароль</string>
+    <string name="error_user_already_exists">Пользователь с таким логином уже зарегистрирован</string>
+    <string name="error_server">Ошибка сервера</string>
+    <string name="error_network">Ошибка сети</string>
+    <string name="error_unknown">Неизвестная ошибка</string>
+
+    <string name="post_edit">Редактировать</string>
+    <string name="post_remove">Удалить</string>
+
+    <string name="delete_confirmation_title">Удаление</string>
+    <string name="delete_confirmation_message">Вы уверены, что хотите удалить?</string>
+    <string name="delete_post_message">Удалить пост?</string>
+    <string name="action_yes">Да</string>
+    <string name="action_no">Нет</string>
+
+    <string name="share_chooser_title">Поделиться</string>
+
+    <string name="toast_create_post">Создать пост</string>
+    <string name="create_post">Создать пост</string>
+    <string name="toast_edit_post">Редактирование поста %1$d</string>
+    <string name="toast_open_post">Открыть пост %1$d</string>
+
+    <string name="title_new_post">Создание поста</string>
+    <string name="action_save">Сохранить</string>
+    <string name="action_remove">Удалить</string>
+    <string name="hint_post_content">Ваше сообщение</string>
+
+    <string name="action_pick_photo">Выбрать фото</string>
+    <string name="action_pick_attachment">Вложение</string>
+    <string name="action_pick_mentions">Упоминания</string>
+    <string name="action_pick_location">Локация</string>
+
+    <string name="pick_attachment_title">Тип вложения</string>
+    <string name="pick_attachment_audio">Аудио</string>
+    <string name="pick_attachment_video">Видео</string>
+
+    <string name="todo_pick_audio">TODO: выбор аудио</string>
+    <string name="todo_pick_video">TODO: выбор видео</string>
+    <string name="todo_pick_mentions">TODO: выбор упоминаний</string>
+    <string name="todo_pick_location">TODO: выбор локации</string>
+
+    <string name="error_post_empty">Введите текст поста</string>
+    <string name="error_attachment_too_big">Файл должен быть меньше 15 МБ</string>
+
+    <string name="post_created">Пост создан</string>
+    <string name="post_saved_stub">Пост сохранён</string>
 </resources>

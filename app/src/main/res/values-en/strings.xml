@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">NeWork</string>
+
+    <string name="menu_profile">Profile</string>
+    <string name="nav_posts">Posts</string>
+    <string name="nav_events">Events</string>
+    <string name="nav_users">Users</string>
+    <string name="menu_post">Post menu</string>
+
+    <string name="auth_required_title">Authorization required</string>
+    <string name="auth_required_message_post">To create a post, please sign in or register.</string>
+    <string name="auth_required_message_event">To create an event, please sign in or register.</string>
+
+    <string name="action_login">Sign in</string>
+    <string name="action_register">Sign up</string>
+    <string name="action_cancel">Cancel</string>
+
+    <string name="hint_login">Login</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_repeat_password">Repeat password</string>
+
+    <string name="btn_login">Sign in</string>
+    <string name="btn_register">Sign up</string>
+    <string name="login_to_register">No account? Sign up</string>
+
+    <string name="login_success">Signed in successfully</string>
+    <string name="register_success">Registered successfully</string>
+
+    <string name="error_login_empty">Login can’t be empty</string>
+    <string name="error_password_empty">Password can’t be empty</string>
+    <string name="error_name_empty">Name can’t be empty</string>
+    <string name="error_passwords_not_match">Passwords do not match</string>
+    <string name="error_invalid_credentials">Invalid login or password</string>
+    <string name="error_user_already_exists">User with this login already exists</string>
+    <string name="error_server">Server error</string>
+    <string name="error_network">Network error</string>
+    <string name="error_unknown">Unknown error</string>
+
+    <string name="post_edit">Edit</string>
+    <string name="post_remove">Delete</string>
+
+    <string name="delete_confirmation_title">Delete</string>
+    <string name="delete_confirmation_message">Are you sure you want to delete?</string>
+    <string name="delete_post_message">Delete this post?</string>
+    <string name="action_yes">Yes</string>
+    <string name="action_no">No</string>
+
+    <string name="share_chooser_title">Share</string>
+
+    <string name="toast_create_post">Create post</string>
+    <string name="create_post">Create post</string>
+    <string name="toast_edit_post">Edit post %1$d</string>
+    <string name="toast_open_post">Open post %1$d</string>
+
+    <string name="title_new_post">New post</string>
+    <string name="action_save">Save</string>
+    <string name="action_remove">Remove</string>
+    <string name="hint_post_content">Your message</string>
+
+    <string name="action_pick_photo">Pick photo</string>
+    <string name="action_pick_attachment">Attachment</string>
+    <string name="action_pick_mentions">Mentions</string>
+    <string name="action_pick_location">Location</string>
+
+    <string name="pick_attachment_title">Attachment type</string>
+    <string name="pick_attachment_audio">Audio</string>
+    <string name="pick_attachment_video">Video</string>
+
+    <string name="todo_pick_audio">TODO: pick audio</string>
+    <string name="todo_pick_video">TODO: pick video</string>
+    <string name="todo_pick_mentions">TODO: pick mentions</string>
+    <string name="todo_pick_location">TODO: pick location</string>
+
+
+    <string name="error_post_empty">Enter post text</string>
+    <string name="error_attachment_too_big">File must be less than 15 MB</string>
+
+    <string name="post_created">Post created</string>
+    <string name="post_saved_stub">Post saved</string>
+</resources>
