@@ -1,51 +1,173 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_main"
-    app:startDestination="@id/feedFragment">
-
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/navigationPosts">
     <fragment
-        android:id="@+id/feedFragment"
-        android:name="ru.social.nework.ui.feed.FeedFragment"
-        android:label="@string/app_name">
-
+        android:id="@+id/signInFragment"
+        android:name="ru.social.nework.activity.auth.SignInFragment"
+        android:label="@string/login"
+        tools:layout="@layout/fragment_sign_in" >
         <action
-            android:id="@+id/action_feedFragment_to_newPostFragment"
-            app:destination="@id/newPostFragment" />
+            android:id="@+id/action_signInFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
     </fragment>
-
     <fragment
-        android:id="@+id/newPostFragment"
-        android:name="ru.social.nework.ui.feed.NewPostFragment"
-        android:label="@string/title_new_post" />
+        android:id="@+id/signUpFragment"
+        android:name="ru.social.nework.activity.auth.SignUpFragment"
+        android:label="@string/registration"
+        tools:layout="@layout/fragment_sign_up" />
+    <action android:id="@+id/action_global_signInFragment" app:destination="@id/signInFragment"/>
+    <action android:id="@+id/action_global_signUpFragment" app:destination="@id/signUpFragment"/>
+    <navigation android:id="@+id/navigationPosts"
+        app:startDestination="@id/postsFragment">
+        <fragment
+            android:id="@+id/postsFragment"
+            android:name="ru.social.nework.activity.posts.PostsFragment"
+            android:label="@string/app_name">
+            <action
+                android:id="@+id/action_postsFragment_to_newPostFragment"
+                app:destination="@id/newPostFragment" />
+            <action
+                android:id="@+id/action_postsFragment_to_postDetailsFragment"
+                app:destination="@id/postDetailsFragment" />
 
-    <fragment
-        android:id="@+id/eventsFragment"
-        android:name="ru.social.nework.ui.events.EventsFragment"
-        android:label="@string/nav_events" />
-
-    <fragment
-        android:id="@+id/usersFragment"
-        android:name="ru.social.nework.ui.users.UsersFragment"
-        android:label="@string/nav_users" />
-
-    <fragment
-        android:id="@+id/loginFragment"
-        android:name="ru.social.nework.ui.auth.LoginFragment"
-        android:label="@string/action_login" />
-
-    <fragment
-        android:id="@+id/profileFragment"
-        android:name="ru.social.nework.ui.profile.ProfileFragment"
-        android:label="@string/menu_profile" />
-
-    <fragment
-        android:id="@+id/registerFragment"
-        android:name="ru.social.nework.ui.auth.RegisterFragment"
-        android:label="@string/action_register">
-
-        <action
-            android:id="@+id/action_registerFragment_to_loginFragment"
-            app:destination="@id/loginFragment" />
-    </fragment>
+        </fragment>
+        <fragment
+            android:id="@+id/newPostFragment"
+            android:name="ru.social.nework.activity.posts.NewPostFragment"
+            android:label="@string/new_post"
+            tools:layout="@layout/fragment_new_post">
+            <action
+                android:id="@+id/action_newPostFragment_to_chooseUsersFragment"
+                app:destination="@id/chooseUsersFragment" />
+            <!--suppress NavigationFile -->
+            <argument
+                android:name="longArg"
+                app:argType="long"
+                android:defaultValue="-1L" />
+            <deepLink
+                app:uri="android-app://newPostFragment?longArg={longArg}" />
+        </fragment>
+        <fragment
+            android:id="@+id/chooseUsersFragment"
+            android:name="ru.social.nework.activity.posts.ChooseUsersFragment"
+            android:label="@string/choose_users" />
+        <fragment
+            android:id="@+id/postDetailsFragment"
+            android:name="ru.social.nework.activity.posts.PostDetailsFragment"
+            android:label="@string/post"
+            tools:layout="@layout/fragment_post_details">
+            <action
+                android:id="@+id/action_postDetailsFragment_to_likersFragment"
+                app:destination="@id/likersFragment" />
+            <action
+                android:id="@+id/action_postDetailsFragment_to_mentionedFragment"
+                app:destination="@id/mentionedFragment" />
+            <!--suppress NavigationFile -->
+            <argument
+                android:name="longArg"
+                app:argType="long"
+                android:defaultValue="-1L" />
+            <deepLink
+                app:uri="android-app://postDetailsFragment?longArg={longArg}" />
+        </fragment>
+        <fragment
+            android:id="@+id/likersFragment"
+            android:name="ru.social.nework.activity.posts.LikersFragment"
+            android:label="@string/likers" />
+        <fragment
+            android:id="@+id/mentionedFragment"
+            android:name="ru.social.nework.activity.posts.MentionedFragment"
+            android:label="@string/mentioned"
+            tools:layout="@layout/fragment_mentioned" />
+    </navigation>
+    <navigation android:id="@+id/navigationUsers"
+        app:startDestination="@id/usersFragment">
+        <fragment
+            android:id="@+id/userWallFragment"
+            android:name="ru.social.nework.activity.users.UserWallFragment"
+            android:label="@string/user_wall"
+            tools:layout="@layout/fragment_user_wall">
+        <!--suppress NavigationFile -->
+            <argument
+            android:name="longArg"
+            app:argType="long"
+            android:defaultValue="-1L" />
+        <deepLink
+            app:uri="android-app://userWallFragment?longArg={longArg}" />
+            <action
+                android:id="@+id/action_userWallFragment_to_newJobFragment"
+                app:destination="@id/newJobFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/usersFragment"
+            android:name="ru.social.nework.activity.users.UsersFragment"
+            android:label="@string/app_name"
+            tools:layout="@layout/fragment_users">
+            <action
+                android:id="@+id/action_usersFragment_to_userWallFragment"
+                app:destination="@id/userWallFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/newJobFragment"
+            android:name="ru.social.nework.activity.users.NewJobFragment"
+            android:label="@string/new_job"
+            tools:layout="@layout/fragment_new_job" />
+    </navigation>
+    <navigation android:id="@+id/navigationEvents"
+        app:startDestination="@id/eventsFragment">
+        <fragment
+            android:id="@+id/eventsFragment"
+            android:name="ru.social.nework.activity.events.EventsFragment"
+            android:label="@string/app_name"
+            tools:layout="@layout/fragment_events">
+            <action
+                android:id="@+id/action_eventsFragment_to_eventDetailsFragment"
+                app:destination="@id/eventDetailsFragment" />
+            <action
+                android:id="@+id/action_eventsFragment_to_newEventFragment"
+                app:destination="@id/newEventFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/eventDetailsFragment"
+            android:name="ru.social.nework.activity.events.EventDetailsFragment"
+            android:label="@string/event"
+            tools:layout="@layout/fragment_event_detail" >
+            <action
+                android:id="@+id/action_eventDetailsFragment_to_likersFragment"
+                app:destination="@id/likersFragment" />
+            <action
+                android:id="@+id/action_eventDetailsFragment_to_speakersFragment"
+                app:destination="@id/speakersFragment" />
+            <action
+                android:id="@+id/action_eventDetailsFragment_to_participantsFragment"
+                app:destination="@id/participantsFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/newEventFragment"
+            android:name="ru.social.nework.activity.events.NewEventFragment"
+            android:label="@string/new_event"
+            tools:layout="@layout/fragment_new_event" >
+            <action
+                android:id="@+id/action_newEventFragment_to_chooseSpeakersFragment"
+                app:destination="@id/chooseSpeakersFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/likersFragment"
+            android:name="ru.social.nework.activity.events.LikersFragment"
+            android:label="@string/likers" />
+        <fragment
+            android:id="@+id/participantsFragment"
+            android:name="ru.social.nework.activity.events.ParticipantsFragment"
+            android:label="@string/participants" />
+        <fragment
+            android:id="@+id/speakersFragment"
+            android:name="ru.social.nework.activity.events.SpeakersFragment"
+            android:label="@string/speakers" />
+        <fragment
+            android:id="@+id/chooseSpeakersFragment"
+            android:name="ru.social.nework.activity.events.ChooseSpeakersFragment"
+            android:label="@string/speakers" />
+    </navigation>
 </navigation>

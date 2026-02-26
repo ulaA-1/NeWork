@@ -1,80 +1,75 @@
 <resources>
     <string name="app_name">NeWork</string>
-
-    <string name="menu_profile">Профиль</string>
-    <string name="nav_posts">Посты</string>
-    <string name="nav_events">События</string>
-    <string name="nav_users">Пользователи</string>
-    <string name="menu_post">Меню поста</string>
-
-    <string name="auth_required_title">Нужна авторизация</string>
-    <string name="auth_required_message_post">Чтобы создать пост, войдите или зарегистрируйтесь.</string>
-    <string name="auth_required_message_event">Чтобы создать событие, войдите или зарегистрируйтесь.</string>
-
-    <string name="action_login">Вход</string>
-    <string name="action_register">Регистрация</string>
-    <string name="action_cancel">Отмена</string>
-
-    <string name="hint_login">Логин</string>
-    <string name="hint_password">Пароль</string>
-    <string name="hint_name">Имя</string>
-    <string name="hint_repeat_password">Повтор пароля</string>
-
-    <string name="btn_login">Войти</string>
-    <string name="btn_register">Зарегистрироваться</string>
-    <string name="login_to_register">Нет аккаунта? Регистрация</string>
-
-    <string name="login_success">Вход выполнен успешно</string>
-    <string name="register_success">Регистрация выполнена успешно</string>
-
-    <string name="error_login_empty">Логин не может быть пустым</string>
-    <string name="error_password_empty">Пароль не может быть пустым</string>
-    <string name="error_name_empty">Имя не может быть пустым</string>
-    <string name="error_passwords_not_match">Пароли не совпадают</string>
-    <string name="error_invalid_credentials">Неверный логин или пароль</string>
-    <string name="error_user_already_exists">Пользователь с таким логином уже зарегистрирован</string>
-    <string name="error_server">Ошибка сервера</string>
-    <string name="error_network">Ошибка сети</string>
-    <string name="error_unknown">Неизвестная ошибка</string>
-
-    <string name="post_edit">Редактировать</string>
-    <string name="post_remove">Удалить</string>
-
-    <string name="delete_confirmation_title">Удаление</string>
-    <string name="delete_confirmation_message">Вы уверены, что хотите удалить?</string>
-    <string name="delete_post_message">Удалить пост?</string>
-    <string name="action_yes">Да</string>
-    <string name="action_no">Нет</string>
-
-    <string name="share_chooser_title">Поделиться</string>
-
-    <string name="toast_create_post">Создать пост</string>
-    <string name="create_post">Создать пост</string>
-    <string name="toast_edit_post">Редактирование поста %1$d</string>
-    <string name="toast_open_post">Открыть пост %1$d</string>
-
-    <string name="title_new_post">Создание поста</string>
-    <string name="action_save">Сохранить</string>
-    <string name="action_remove">Удалить</string>
-    <string name="hint_post_content">Ваше сообщение</string>
-
-    <string name="action_pick_photo">Выбрать фото</string>
-    <string name="action_pick_attachment">Вложение</string>
-    <string name="action_pick_mentions">Упоминания</string>
-    <string name="action_pick_location">Локация</string>
-
-    <string name="pick_attachment_title">Тип вложения</string>
-    <string name="pick_attachment_audio">Аудио</string>
-    <string name="pick_attachment_video">Видео</string>
-
-    <string name="todo_pick_audio">TODO: выбор аудио</string>
-    <string name="todo_pick_video">TODO: выбор видео</string>
-    <string name="todo_pick_mentions">TODO: выбор упоминаний</string>
-    <string name="todo_pick_location">TODO: выбор локации</string>
-
-    <string name="error_post_empty">Введите текст поста</string>
-    <string name="error_attachment_too_big">Файл должен быть меньше 15 МБ</string>
-
-    <string name="post_created">Пост создан</string>
-    <string name="post_saved_stub">Пост сохранён</string>
+    <string name="login">Login</string>
+    <string name="posts">Posts</string>
+    <string name="events">Events</string>
+    <string name="users">Users</string>
+    <string name="chooser_share_post">Share post</string>
+    <string name="menu_remove">Remove</string>
+    <string name="menu_edit">Edit</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="password">Password</string>
+    <string name="sign_in_dialog">Authorization is required. To create a post, log in or register</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="authentication">Authentication</string>
+    <string name="name">Name</string>
+    <string name="repeat_password">Repeat password</string>
+    <string name="dialog_signOut">Are you sure?</string>
+    <string name="description_photo">Photo</string>
+    <string name="remove">Remove</string>
+    <string name="registration">Registration</string>
+    <string name="password_cannot_be_empty">Password cannot be empty</string>
+    <string name="don_t_have_an_account_register">Don\'t have an account? Register</string>
+    <string name="post">Post</string>
+    <string name="retry_loading">Retry</string>
+    <string name="empty_posts">There are no posts.\nIf you create a new post, it will appear here</string>
+    <string name="empty_events">There are no events.\nIf you create a new event, it will appear here</string>
+    <string name="empty_jobs">There are no jobs.\nIf you create a new job, it will appear here</string>
+    <string name="error_loading">Something went wrong. Try again later</string>
+    <string name="date_pattern" translatable="false">dd.MM.yy HH:mm</string>
+    <string name="likers">Likers</string>
+    <string name="save">Save</string>
+    <string name="mentioned">Mentioned</string>
+    <string name="new_post">New post</string>
+    <string name="choose_users">Choose users</string>
+    <string name="attachment_shouldn_t_excess_15mb">Attachment shouldn\'t excess 15Mb</string>
+    <string name="event">Event</string>
+    <string name="new_event">New event</string>
+    <string name="share">Share</string>
+    <string name="participants">Participants</string>
+    <string name="speakers">Speakers</string>
+    <string name="mm_dd_yyyy_hh_mm" translatable="false">MM/dd/yyyy HH:mm</string>
+    <string name="date">Date</string>
+    <string name="online" translatable="false">Online</string>
+    <string name="offline" translatable="false">Offline</string>
+    <string name="type">Type</string>
+    <string name="my_profile">My profile</string>
+    <string name="position">Position</string>
+    <string name="link">Link</string>
+    <string name="create">Create</string>
+    <string name="mm_dd_yyyy" translatable="false">mm/dd/yyyy</string>
+    <string name="start_date">Start date</string>
+    <string name="end_date">End date</string>
+    <string name="new_posts">New posts</string>
+    <string name="new_events">New events</string>
+    <string name="plus" translatable="false">+</string>
+    <string name="select_date">Select date</string>
+    <string name="enter_dates">Enter dates</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="select_dates">Select dates</string>
+    <string name="avatar">Avatar</string>
+    <string name="attachment">Attachment</string>
+    <string name="delete">Delete</string>
+    <string name="add">Add</string>
+    <string name="play">Play</string>
+    <string name="user_already_exists">User already exists</string>
+    <string name="wrong_format_of_photo">Wrong format of photo</string>
+    <string name="task_cancelled">Task cancelled</string>
+    <string name="passwords_don_t_match">Passwords don\'t match</string>
+    <string name="user_wall">User wall</string>
+    <string name="new_job">New job</string>
+    <string name="looking_for_a_job">looking for a job</string>
 </resources>

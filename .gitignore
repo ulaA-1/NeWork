@@ -49,3 +49,5 @@ maps.properties
 
 # Secrets / keys
 apikey.properties
+maps.properties
+local.properties

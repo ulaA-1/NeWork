@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ImageView
+        android:id="@+id/avatar1"
+        android:layout_width="@dimen/posts_avatar_size"
+        android:layout_height="@dimen/posts_avatar_size"
+        tools:srcCompat="@drawable/monogram"
+        android:visibility="gone"
+        android:importantForAccessibility="no" />
+
+    <ImageView
+        android:id="@+id/avatar2"
+        android:layout_width="@dimen/posts_avatar_size"
+        android:layout_height="@dimen/posts_avatar_size"
+        tools:srcCompat="@drawable/monogram"
+        android:layout_marginStart="-10dp"
+        android:visibility="gone"
+        android:importantForAccessibility="no" />
+
+    <ImageView
+        android:id="@+id/avatar3"
+        android:layout_width="@dimen/posts_avatar_size"
+        android:layout_height="@dimen/posts_avatar_size"
+        tools:srcCompat="@drawable/monogram"
+        android:layout_marginStart="-10dp"
+        android:visibility="gone"
+        android:importantForAccessibility="no" />
+
+    <ImageView
+        android:id="@+id/avatar4"
+        android:layout_width="@dimen/posts_avatar_size"
+        android:layout_height="@dimen/posts_avatar_size"
+        tools:srcCompat="@drawable/monogram"
+        android:layout_marginStart="-10dp"
+        android:visibility="gone"
+        android:importantForAccessibility="no" />
+
+    <ImageView
+        android:id="@+id/avatar5"
+        android:layout_width="@dimen/posts_avatar_size"
+        android:layout_height="@dimen/posts_avatar_size"
+        tools:srcCompat="@drawable/monogram"
+        android:layout_marginStart="-10dp"
+        android:visibility="gone"
+        android:importantForAccessibility="no" />
+
+    <TextView
+        android:id="@+id/avatar_more"
+        android:layout_width="@dimen/posts_avatar_size"
+        android:layout_height="@dimen/posts_avatar_size"
+        android:background="@drawable/background"
+        android:gravity="center"
+        android:text="@string/plus"
+        android:textColor="#FEF7FF"
+        android:textSize="16sp"
+        android:layout_marginStart="-10dp"
+        android:visibility="gone"/>
+
+</LinearLayout>
